@@ -56,7 +56,8 @@ p:hover {
 </head>
 <body>
 	<script type="text/javascript">
-		var user = prompt("Szia Pemet! Kora reggel van es kapsz a nyuszitol egy SMSt. Szerinted mirol szol? A) szejetet B) mekkorat nyuszogtunk tegnap C) jogsi!!!").toUpperCase();
+	do {
+	var user = prompt("Szia Pemet! Kora reggel van es kapsz a nyuszitol egy SMSt. Szerinted mirol szol? A) szejetet B) mekkorat nyuszogtunk tegnap C) jogsi!!!").toUpperCase();
 	var megoldas = "Hat akkor bizti megcsinalod neki a jogsit! Nyaaaaaa.";
 	var lelkifuci = "Na pemet, tudjuk, hogy lelkifucid van! Szejetet es jogsi!";
 
@@ -84,8 +85,12 @@ p:hover {
         break;
     default:
         confirm("Valassz egy betut, disznocska!");
-        user;
-	};
+		}
+	if (user === 'A' || user === 'B' || user === 'C') {
+		break;
+		}
+	} while (user != 'A' || user != 'B' || user != 'C');
+
     </script>
     <div id="cim"><h1>Pemetke nagy feladata</h1></div>
     <div id="kep"><img src="http://id.ragegenerator.com/uploads/203662.png"></div>
